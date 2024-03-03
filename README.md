@@ -4,6 +4,7 @@ This is the capstone project for the Meta Front-end Developer program on Courser
 Screenshots
 
 Home page
+
 ![image3](https://github.com/Nourkhadoor/Little-Lemon/assets/156527994/827f7a1b-feef-4eb6-9df4-9c0602b5cc86)
 
 ![image2](https://github.com/Nourkhadoor/Little-Lemon/assets/156527994/04178946-7754-4feb-a1b0-fafa72d43b59)
