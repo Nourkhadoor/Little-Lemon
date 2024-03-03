@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation Form</title>
+  <link rel="stylesheet" href="App.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li>
+              <a href="https://www.figma.com/file/Kg2xnrvxtW5DkBHKyijsgo/prototype.-little-lemon?type=design&node-id=0-3&mode=design&t=VeubcR3LX6QGqnEZ-0">Home</a>
+            </li>
+            <li>
+              <a href="https://www.figma.com/file/Kg2xnrvxtW5DkBHKyijsgo/prototype.-little-lemon?type=design&node-id=7-24&mode=design&t=VeubcR3LX6QGqnEZ-0">About</a>
+            </li>
+            <li>
+              <a href="https://www.figma.com/file/Kg2xnrvxtW5DkBHKyijsgo/prototype.-little-lemon?type=design&node-id=9-74&mode=design&t=VeubcR3LX6QGqnEZ-0">Menu</a>
+            </li>
+            <li>
+              <a href="https://www.figma.com/file/Kg2xnrvxtW5DkBHKyijsgo/prototype.-little-lemon?type=design&node-id=10-120&mode=design&t=VeubcR3LX6QGqnEZ-0">Reservations</a>
+            </li>
+            <li>
+              <a href="https://www.figma.com/file/Kg2xnrvxtW5DkBHKyijsgo/prototype.-little-lemon?type=design&node-id=9-74&mode=design&t=VeubcR3LX6QGqnEZ-0">Order online</a>
+            </li>
+            <li>
+              <a href="https://www.figma.com/file/Kg2xnrvxtW5DkBHKyijsgo/prototype.-little-lemon?type=design&node-id=13-429&mode=design&t=VeubcR3LX6QGqnEZ-0">Login</a>
+            </li>
+          </ul>
+      </nav>
+  </header>
+
+  <main>
+    <section class="reservation-page">
+        <h1>Reservation Form</h1>
+        <form action="submit_reservation.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required><br>
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" required><br>
+            <label for="occasion">Occasion:</label>
+            <input type="text" id="occasion" name="occasion"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Little Lemon. All rights reserved.</p>
+    <img src="little-lemon/src/images/small logo.png" alt="Little Lemon Logo" class="footer-logo">
+  <div class="contact-info">
+    <p>2385 Maldove Way<br>Chicago, Illinois</p>
+    <p>Phone: (629)-243-6827</p>
+    <p>Email: info@littlelemon.com</p>
+  </div>
+  </footer>
+</body>
+</html>

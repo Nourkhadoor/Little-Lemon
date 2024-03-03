@@ -1,38 +1,434 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  background-color: #EDEFEE;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.logo-container {
+  margin-right: 40px;
+  margin-left: 100px;
+  display: inline-block;
+}
+
+.logo {
+  width: 300px;
+  height: 60px;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+  margin-left: 460px;
+  margin-right: 50px;
+}
+
+.nav li {
+  margin-right: 20px;
+  display: inline;
+}
+
+.nav li a {
+  color: #495E57;
+  text-decoration: none;
+  font-size: large;
+}
+
+.nav li a:hover,
+.nav li a:active {
+  color: red;
+  text-decoration: underline;
+}
+
+.restaurant-info {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #495E57;
+  color: #fff;
+  padding: 60px;
 }
 
-.App-link {
-  color: #61dafb;
+.restaurant-details {
+  flex: 1;
+  text-align: left;
+  padding: 5px;
+  margin-left: 50px;
+  margin-right: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.restaurant-details h2 {
+  font-family: 'Markazi Text', sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  color: #F4CE14;
+  margin-left: 0px;
+  margin-top: 20px;
+}
+
+.restaurant-details h3 {
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.restaurant-details p {
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+.restaurant-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 70px;
+  width: 300px;
+  height: 300px;
+}
+
+.reserve-button {
+  background-color: #F4CE14;
+  color: #000;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Klara', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.weekly-specials {
+  margin-top: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: left;
+  margin-left: 100px;
+}
+
+.specials-title {
+  color: #000000;
+  margin-left: 5px;
+  font-weight: 650;
+}
+
+.weekly-specials h2 {
+  color: black;
+  font-size: 32px;
+}
+
+.online-menu-button {
+  background-color: #F4CE14;
+  color: black;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-top: 20px;
+}
+
+.specials-container {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.special-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.special-card {
+  width: 20%;
+  max-width: 400px;
+  flex: 1;
+  margin-right: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #EDEFEE;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.special-card h3 {
+  margin-bottom: 10px;
+  font-family: 'Markazi Text', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.special-card .price {
+  color: #EE9972;
+  font-family: 'Markazi Text', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: right;
+}
+
+.order-button {
+  background-color: #f4ce14;
+  color: black;
+  font-size: 16px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+
+.footer {
+  background-color: #495E57;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.footer-logo {
+  width: 100px;
+  height: auto;
+  margin: 0 10px;
+}
+
+.hours-of-operation {
+  text-align: left;
+  margin: 0 10px;
+}
+
+.contact-info {
+  text-align: left;
+  margin: 0 10px;
+  margin-top: 50px;
+}
+
+h2 {
+  margin-left: 350px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0px;
+  padding: 10px;
+  margin-left: 350px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+input[type="occasion"],
+select {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-left: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #F4CE14;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-size: 16px;
+  padding: 10px 20px;
+  font-family: 'Klara', sans-serif;
+  font-weight: 500;
+  margin-left: 750px;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 55%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content h2 {
+  margin-left: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.confirmation-message {
+  margin-left: 0;
+  font-size: 16px;
+  color: #666;
+}
+
+
+@media (max-width: 768px) {
+
+  .restaurant-details {
+    margin-right: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .restaurant-image img {
+    margin-right: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .weekly-specials {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .special-card {
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  h2, label, input, select, button {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .nav ul {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: block;
+    text-align: left;
+    position: inherit;
+  }
+
+  .nav li {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .restaurant-info {
+    padding: 20px;
+  }
+
+  .footer {
+    padding: 0%;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .header {
+    width: 100%;
+    padding: 0%;
+  }
+
+  .logo-container {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin: 10px;
+  }
+
+  h2,
+  label,
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="time"],
+  input[type="number"],
+  input[type="occasion"],
+  select {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: calc(100% - 40px);
+  }
+
+  button {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .modal-content {
+    width: 80%;
+    margin: 10% auto;
   }
 }
